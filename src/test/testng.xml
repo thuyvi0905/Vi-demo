@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite name" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="listener.Listener"></listener>
+        <listener class-name="listener.MethodListener"></listener>
+    </listeners>
+    <groups>
+        <run>
+            <include name="smoke"></include>
+        </run>
+    </groups>
+    <parameter name="environment" value="uat"/>
+    <parameter name="browser" value="chrome"/>
+    <test name="Vi demo" verbose="1">
+        <packages>
+            <package name="scripts.testset.*"></package>
+        </packages>
+    </test>
+</suite>
