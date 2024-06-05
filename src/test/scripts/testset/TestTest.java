@@ -13,5 +13,6 @@ public class TestTest extends BaseTest {
         new TestPage().performUploadFile("bbb1");
         new TestPage().performUploadFile("ccc1");
         new TestPage().performUploadFile("dddd");
+        new TestPage().performUploadFile("eeeeee");
     }
 }
