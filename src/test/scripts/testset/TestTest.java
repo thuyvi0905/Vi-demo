@@ -10,6 +10,6 @@ public class TestTest extends BaseTest {
         new TestPage().performDownloadFile("src/resources/download");
         new TestPage().performUploadFile("src/resources/upload/image.png");
         new TestPage().performUploadFile("aaaa");
-        
+        new TestPage().performUploadFile("bbb");
     }
 }
